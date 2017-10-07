@@ -19,13 +19,27 @@
             width: 45vw;
             height: 50vh;
         }
+        .card {
+            border: 1px solid red;
+            height: 50px;
+            width: 40px;
+            text-align: center;
+            line-height: 50px;
+        }
+
     </style>
 </head>
 <body>
-<div class="player">
-</div>
-<button type="button" onclick="playerPoints = hitCard(playerHand, playerPoints)">Player Hits</button>
+
+<div class="player"></div>
+
+<button type="button" class="playerButton" >Player Hits</button>
+
 <div class="dealer"></div>
-<button type="button" onclick="dealerPoints = hitCard(dealerHand, dealerPoints)">Dealer Hits</button>
+
+<button type="button" class="dealerButton">Dealer Hits</button>
+
+<button type="button" class="playGame">Start Game</button>
 </body>
+
 </html>
